@@ -1,0 +1,238 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do VGA_interface_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/Chars.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:10:30 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/Chars.v 
+# -- Compiling module chars
+# 
+# Top level modules:
+# 	chars
+# End time: 10:10:30 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/VGA.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:10:30 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA.v 
+# -- Compiling module vga
+# 
+# Top level modules:
+# 	vga
+# End time: 10:10:30 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:10:30 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:10:30 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim {C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim/vga_TOP.vt}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:10:30 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim" C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim/vga_TOP.vt 
+# -- Compiling module vga_TOP_vlg_tst
+# 
+# Top level modules:
+# 	vga_TOP_vlg_tst
+# End time: 10:10:30 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  vga_TOP_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" vga_TOP_vlg_tst 
+# Start time: 10:10:31 on Dec 13,2019
+# Loading work.vga_TOP_vlg_tst
+# Loading work.vga_TOP
+# Loading work.vga
+# Loading work.chars
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Siriy  Hostname: DESKTOP-F83ENDQ  ProcessID: 11912
+#           Attempting to use alternate WLF file "./wlftgyaa8y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgyaa8y
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/out
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/i
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/pixels
+restart
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:15:39 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:15:39 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.vga_TOP
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:23:54 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# ** Error: (vlog-13069) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(51): near "=": syntax error, unexpected '=', expecting ++ or --.
+# ** Error: (vlog-13069) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(62): near "end": syntax error, unexpected end.
+# End time: 10:23:54 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:24:06 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:24:06 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.vga_TOP
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:25:18 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:25:18 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.vga_TOP
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:26:01 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:26:01 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.vga_TOP
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:28:55 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:28:55 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.vga_TOP
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:29:25 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:29:25 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:29:36 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:29:36 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.vga_TOP
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:29:56 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:29:56 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.vga_TOP
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:32:42 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:32:42 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.vga_TOP
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(40): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:41:14 on Dec 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
+# -- Compiling module vga_TOP
+# 
+# Top level modules:
+# 	vga_TOP
+# End time: 10:41:14 on Dec 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.vga_TOP
+# ** Warning: (vsim-3015) C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v(41): [PCDPC] - Port size (4) does not match connection size (5) for port 'char'. The port definition is at: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/chars File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
+run -all

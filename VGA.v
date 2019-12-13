@@ -17,11 +17,13 @@ reg clk25;
 assign hsync = x < (640 + 16) || x >= (640 + 16 + 96);
 assign vsync = y < (480 + 10) || y >= (480 + 10 + 2);
 assign valid = (x < 640) && (y < 480);
+assign clk25_out = clk25;
 //////////////////////////////////////////////////////////
 always @(posedge clk) begin
     newframe <= 0;
     newline <= 0;
-    if (rst) begin
+    clk25 <= 0;
+    if (rst == 0) begin
         x <= 10'b0;
         y <= 10'b0;
         clk25 <= 1'b0;
