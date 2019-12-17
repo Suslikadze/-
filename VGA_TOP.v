@@ -16,10 +16,11 @@ wire newframe;
 wire newline;
 wire VGA_clk;
 wire [7:0] pixels;
-reg [3:0] char;
+//reg [3:0] char;
 reg out;
-reg [3:0] i;
-reg [7:0] pixels_rev;
+reg [3:0] i, j = 0;
+wire valid_char = ((y > 300) && (y < 308)) ? 1 : 0;
+//reg [7:0] pixels_rev;
 //////////////////////////////////////////////////////////  
 assign R = out; 
 assign G = out; 
@@ -40,28 +41,51 @@ vga vga(
 
 chars chars(
     .VGA_clk(VGA_clk),
-    .en(valid),
+    .en(valid_char),
     .char(x[7:3]),
-    .rownum(y[2:0]),
+    .rownum(j[2:0]),
     .pixels(pixels)
 );
 //////////////////////////////////////////////////////////
+// always @(posedge VGA_clk) begin
+//     if (valid) begin
+//         if (valid_char) begin
+//             //if (y < y + 3'd8) begin
+//        // if (char < 15) begin
+//             //pixels_rev <= {pixels[0], pixels[1], pixels[2], pixels[3], pixels[4], pixels[5], pixels[6], pixels[7]};
+//                 if (i < 7) begin
+//                     i <= i + 1;
+//                     out <= pixels[i];
+//                 end else begin
+//                     i = 0;
+//          //       char <= char + 1;
+//                 end
+//           //  end
+//         end
+//         //end else begin
+//           //  char <= 1'b0;
+//        // end    
+//     end
+// end
+//////////////////////////////////////////////////////////
 always @(posedge VGA_clk) begin
     if (valid) begin
-       // if (char < 15) begin
-            pixels_rev <= {pixels[0], pixels[1], pixels[2], pixels[3], pixels[4], pixels[5], pixels[6], pixels[7]};
-            if (i < 7) begin
-                i <= i + 1;
-                out <= pixels_rev[i];
+        if (valid_char) begin
+            if (j < 4'b0111) begin
+                if (i < 7) begin
+                    i <= i + 1;
+                    out <= pixels[i];
+                end else begin
+                    i = 0;
+                    j <= j + 4'b0001;
+                end
             end else begin
-                i = 0;
-         //       char <= char + 1;
+                j <= 0;
             end
-        //end else begin
-          //  char <= 1'b0;
-       // end    
+        end
     end
 end
+
 
 // always @(posedge VGA_clk) begin
 //     if (valid) begin
