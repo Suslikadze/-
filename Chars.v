@@ -1,13 +1,13 @@
 `timescale 1ns / 1ps
 module chars(
-    input VGA_clk,
+   // input VGA_clk,
     input en,
     input [3:0] char,
     input [2:0] rownum,
     output reg [7:0] pixels
     );
 
-always @(posedge VGA_clk)
+always @(*)
     if (en) begin
         case ({char, rownum})
             7'b0000000: pixels = 8'b01111100; //  XXXXX  

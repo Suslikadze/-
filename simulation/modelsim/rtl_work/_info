@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim
 vchars
-Z1 !s110 1576575342
+Z1 !s110 1576747317
 !i10b 1
 !s100 8VXU6=NhG[fL<A:BMi0JZ1
 IVD2R>mF266IVGgZ:=IDJh3
@@ -23,15 +23,15 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1576575341.000000
+Z4 !s108 1576747317.000000
 !s107 C:/Users/Siriy/Desktop/Projects/VGA/Chars.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Siriy/Desktop/Projects/VGA|C:/Users/Siriy/Desktop/Projects/VGA/Chars.v|
 !i113 1
-Z4 o-vlog01compat -work work
-Z5 !s92 -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA
-Z6 tCvgOpt 0
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA
+Z7 tCvgOpt 0
 vvga
-!s110 1576575832
+R1
 !i10b 1
 !s100 Z4kGUCN@1n]F=0j4>1D1:3
 ImPj<E=iBOmU8Z0GUT9HDh2
@@ -45,21 +45,21 @@ R3
 r1
 !s85 0
 31
-!s108 1576575832.000000
+R4
 !s107 C:/Users/Siriy/Desktop/Projects/VGA/VGA.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Siriy/Desktop/Projects/VGA|C:/Users/Siriy/Desktop/Projects/VGA/VGA.v|
 !i113 1
-R4
 R5
 R6
+R7
 vvga_TOP
-!s110 1576576940
+!s110 1576756694
 !i10b 1
-!s100 bc2AI>;A>ih?Y2YDB6gZY1
-IcXa;;SNGMJ0ESFLXM8NNY2
+!s100 `AZM<a?Roe91d6j:[X:aB2
+I@16H;?n9jGRXkAPbg]a:[2
 R2
 R0
-w1576576938
+w1576756536
 8C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
 FC:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
 L0 2
@@ -67,13 +67,13 @@ R3
 r1
 !s85 0
 31
-!s108 1576576940.000000
+!s108 1576756694.000000
 !s107 C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Siriy/Desktop/Projects/VGA|C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v|
 !i113 1
-R4
 R5
 R6
+R7
 nvga_@t@o@p
 vvga_TOP_vlg_tst
 R1
@@ -90,11 +90,11 @@ R3
 r1
 !s85 0
 31
-!s108 1576575342.000000
+R4
 !s107 C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim/vga_TOP.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim|C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim/vga_TOP.vt|
 !i113 1
-R4
+R5
 !s92 -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim
-R6
+R7
 nvga_@t@o@p_vlg_tst
