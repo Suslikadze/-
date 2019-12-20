@@ -43,16 +43,16 @@ vga vga(
 );
 chars chars(
    // .VGA_clk(VGA_clk),
-    .en(valid_char),
+    //.en(valid_char),
     .char(char),
     .rownum(j[2:0]),
     .pixels(pixels)
 );
 //////////////////////////////////////////////////////////
 always @(*) begin
-    if (y > 300) begin
+    if (y == 300) begin
         valid_char <= 1;
-    end else if (j == 0) begin
+    end else if (j == 7) begin
         valid_char <= 0;
     end
 end
@@ -68,15 +68,23 @@ always @(*) begin
 end
 //////////////////////////////////////////////////////////
 always @(posedge newline) begin
-    if (valid_char) begin
+   // if ((y > 300) && (y < 308)) begin
         j <= j + 1;
-    end
+  //  end
     if (j == 7) begin
         j <= 0;
     end
 end
 //////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////
+always @(posedge VGA_clk) begin
+    
+end
+//////////////////////////////////////////////////////////
 always @(*) begin
+
+
     line[3:0] <= CHAR_F;
     line[7:4] <= CHAR_I;
     line[11:8] <= CHAR_Z;
@@ -85,6 +93,8 @@ always @(*) begin
     line[23:20] <= CHAR_U;
     line[27:24] <= CHAR_Z;
     line[31:28] <= CHAR_Z;
+
+
     case (x[9:3])
         7'd1: char = line[3:0];
         7'd3: char = line[7:4];

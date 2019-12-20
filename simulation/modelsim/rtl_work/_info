@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim
 vchars
-Z1 !s110 1576747317
+Z1 !s110 1576826101
 !i10b 1
-!s100 8VXU6=NhG[fL<A:BMi0JZ1
-IVD2R>mF266IVGgZ:=IDJh3
+!s100 263@C<gm6Wa>;FCG?@Ze<3
+IV>h[X9_cShSgDeDi8Md`52
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1576156314
+w1576825484
 8C:/Users/Siriy/Desktop/Projects/VGA/Chars.v
 FC:/Users/Siriy/Desktop/Projects/VGA/Chars.v
 L0 2
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1576747317.000000
+Z4 !s108 1576826101.000000
 !s107 C:/Users/Siriy/Desktop/Projects/VGA/Chars.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Siriy/Desktop/Projects/VGA|C:/Users/Siriy/Desktop/Projects/VGA/Chars.v|
 !i113 1
@@ -53,13 +53,13 @@ R5
 R6
 R7
 vvga_TOP
-!s110 1576756694
+!s110 1576827619
 !i10b 1
-!s100 `AZM<a?Roe91d6j:[X:aB2
-I@16H;?n9jGRXkAPbg]a:[2
+!s100 S77b3RD^@6D;Y4:7Je0JG2
+Iil5@mo1Ze9X7lc]^nk>Zj0
 R2
 R0
-w1576756536
+w1576827606
 8C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
 FC:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
 L0 2
@@ -67,7 +67,7 @@ R3
 r1
 !s85 0
 31
-!s108 1576756694.000000
+!s108 1576827619.000000
 !s107 C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Siriy/Desktop/Projects/VGA|C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v|
 !i113 1
