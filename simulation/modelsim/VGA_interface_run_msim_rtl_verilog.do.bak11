@@ -5,6 +5,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/Chars.v}
 vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/VGA.v}

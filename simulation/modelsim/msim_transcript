@@ -10,113 +10,83 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:12:47 on Dec 24,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v 
+# -- Compiling module ROM
+# 
+# Top level modules:
+# 	ROM
+# End time: 15:12:47 on Dec 24,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:15:01 on Dec 20,2019
+# Start time: 15:12:47 on Dec 24,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
 # -- Compiling module vga_TOP
 # 
 # Top level modules:
 # 	vga_TOP
-# End time: 10:15:01 on Dec 20,2019, Elapsed time: 0:00:00
+# End time: 15:12:47 on Dec 24,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/Chars.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:15:01 on Dec 20,2019
+# Start time: 15:12:47 on Dec 24,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/Chars.v 
 # -- Compiling module chars
 # 
 # Top level modules:
 # 	chars
-# End time: 10:15:01 on Dec 20,2019, Elapsed time: 0:00:00
+# End time: 15:12:47 on Dec 24,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA {C:/Users/Siriy/Desktop/Projects/VGA/VGA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:15:01 on Dec 20,2019
+# Start time: 15:12:47 on Dec 24,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA.v 
 # -- Compiling module vga
 # 
 # Top level modules:
 # 	vga
-# End time: 10:15:01 on Dec 20,2019, Elapsed time: 0:00:00
+# End time: 15:12:47 on Dec 24,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim {C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim/vga_TOP.vt}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:15:01 on Dec 20,2019
+# Start time: 15:12:47 on Dec 24,2019
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim" C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim/vga_TOP.vt 
 # -- Compiling module vga_TOP_vlg_tst
 # 
 # Top level modules:
 # 	vga_TOP_vlg_tst
-# End time: 10:15:01 on Dec 20,2019, Elapsed time: 0:00:00
+# End time: 15:12:48 on Dec 24,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  vga_TOP_vlg_tst
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" vga_TOP_vlg_tst 
-# Start time: 10:15:01 on Dec 20,2019
+# Start time: 15:12:48 on Dec 24,2019
 # Loading work.vga_TOP_vlg_tst
 # Loading work.vga_TOP
 # Loading work.vga
+# Loading work.ROM
 # Loading work.chars
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Siriy  Hostname: DESKTOP-F83ENDQ  ProcessID: 11912
-#           Attempting to use alternate WLF file "./wlftaj7m9a".
+#           Attempting to use alternate WLF file "./wlftmzz9hq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftaj7m9a
+#           Using alternate file: ./wlftmzz9hq
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-add wave -position end  sim:/vga_TOP_vlg_tst/i1/valid_char
-add wave -position end  sim:/vga_TOP_vlg_tst/i1/j
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/R
+run -all
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/valid
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/x
 add wave -position end  sim:/vga_TOP_vlg_tst/i1/y
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/pixels
 restart
-run -all
-run -all
-run -all
-vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:26:15 on Dec 20,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
-# -- Compiling module vga_TOP
-# 
-# Top level modules:
-# 	vga_TOP
-# End time: 10:26:15 on Dec 20,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.vga_TOP
-run -all
-add wave -position end  sim:/vga_TOP_vlg_tst/i1/newline
-restart
-run -all
-vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:37:10 on Dec 20,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
-# -- Compiling module vga_TOP
-# 
-# Top level modules:
-# 	vga_TOP
-# End time: 10:37:10 on Dec 20,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.vga_TOP
-run -all
-vlog -vlog01compat -work work +incdir+C:/Users/Siriy/Desktop/Projects/VGA C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:40:19 on Dec 20,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Siriy/Desktop/Projects/VGA" C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v 
-# -- Compiling module vga_TOP
-# 
-# Top level modules:
-# 	vga_TOP
-# End time: 10:40:19 on Dec 20,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.vga_TOP
 run -all
