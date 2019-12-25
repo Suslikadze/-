@@ -16,6 +16,9 @@ wire newframe;
 wire newline;
 wire VGA_clk;
 reg [31:0] line;
+wire [7:0] exit_value;
+reg [5:0] counter_value;
+reg [19:0] counter_clk;
 //////////////////////////////////////////////////////////  
 
 ////////////////////////////////////////////////////////// 
@@ -43,9 +46,17 @@ ROM ROM(
     .x(x[9:0]),
     .y(y[9:0]),
     .line(line[31:0]),
+    .exit_value(exit_value[7:0]),
     .out_R(R),
     .out_G(G),
     .out_B(B)
+);
+
+value_ROM value_ROM(
+    .some_value(counter_value[5:0]),
+    .en(valid),
+    .newframe(newframe),
+    .exit_value(exit_value[7:0])
 );
 //////////////////////////////////////////////////////////
 always @(*) begin
@@ -59,5 +70,15 @@ always @(*) begin
     line[31:28] <= CHAR_Z;
 end
 //////////////////////////////////////////////////////////
-
+always @(posedge VGA_clk) begin
+    if (counter_clk != 5000) begin
+        counter_clk <= counter_clk + 1;
+    end else if (counter_value != 6'o77) begin
+        counter_clk <= 0;
+        counter_value <= counter_value + 1;
+    end else begin
+        counter_value <= 0;
+        counter_clk <= 0;
+    end
+end
 endmodule

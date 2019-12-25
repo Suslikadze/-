@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA_interface
-Tue Dec 24 15:18:40 2019
+Wed Dec 25 12:28:45 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -16,13 +16,13 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
  10. User-Specified and Inferred Latches
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for sld_signaltap:auto_signaltap_0
- 15. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 16. Port Connectivity Checks: "ROM:ROM"
- 17. Port Connectivity Checks: "vga:vga"
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Source assignments for sld_signaltap:auto_signaltap_0
+ 16. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 17. Port Connectivity Checks: "ROM:ROM"
  18. Signal Tap Logic Analyzer Settings
  19. Post-Synthesis Netlist Statistics for Top Partition
  20. Elapsed Time Per Partition
@@ -53,15 +53,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 24 15:18:40 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 25 12:28:45 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; VGA_interface                               ;
 ; Top-level Entity Name              ; vga_TOP                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 707                                         ;
-;     Total combinational functions  ; 534                                         ;
-;     Dedicated logic registers      ; 459                                         ;
-; Total registers                    ; 459                                         ;
+; Total logic elements               ; 831                                         ;
+;     Total combinational functions  ; 649                                         ;
+;     Dedicated logic registers      ; 496                                         ;
+; Total registers                    ; 496                                         ;
 ; Total pins                         ; 7                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 768                                         ;
@@ -179,6 +179,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                           ; Library     ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------+-------------+
+; Test.v                                                             ; yes             ; User Verilog HDL File                        ; C:/Users/Siriy/Desktop/Projects/VGA/Test.v                                                             ;             ;
 ; VGA_TOP2.v                                                         ; yes             ; User Verilog HDL File                        ; C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v                                                         ;             ;
 ; VGA_TOP.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v                                                          ;             ;
 ; Chars.v                                                            ; yes             ; User Verilog HDL File                        ; C:/Users/Siriy/Desktop/Projects/VGA/Chars.v                                                            ;             ;
@@ -247,20 +248,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 707                      ;
+; Estimated Total logic elements              ; 831                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 534                      ;
+; Total combinational functions               ; 649                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 243                      ;
-;     -- 3 input functions                    ; 137                      ;
-;     -- <=2 input functions                  ; 154                      ;
+;     -- 4 input functions                    ; 310                      ;
+;     -- 3 input functions                    ; 144                      ;
+;     -- <=2 input functions                  ; 195                      ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 444                      ;
-;     -- arithmetic mode                      ; 90                       ;
+;     -- normal mode                          ; 535                      ;
+;     -- arithmetic mode                      ; 114                      ;
 ;                                             ;                          ;
-; Total registers                             ; 459                      ;
-;     -- Dedicated logic registers            ; 459                      ;
+; Total registers                             ; 496                      ;
+;     -- Dedicated logic registers            ; 496                      ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 7                        ;
@@ -270,8 +271,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 315                      ;
-; Total fan-out                               ; 3335                     ;
-; Average fan-out                             ; 3.26                     ;
+; Total fan-out                               ; 3787                     ;
+; Average fan-out                             ; 3.23                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -280,9 +281,9 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                 ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |vga_TOP                                                                                                                                ; 534 (0)             ; 459 (0)                   ; 768         ; 0            ; 0       ; 0         ; 7    ; 0            ; |vga_TOP                                                                                                                                                                                                                                                                                                                                            ; vga_TOP                           ; work         ;
-;    |ROM:ROM|                                                                                                                            ; 63 (28)             ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|ROM:ROM                                                                                                                                                                                                                                                                                                                                    ; ROM                               ; work         ;
-;       |chars:chars|                                                                                                                     ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|ROM:ROM|chars:chars                                                                                                                                                                                                                                                                                                                        ; chars                             ; work         ;
+; |vga_TOP                                                                                                                                ; 649 (39)            ; 496 (26)                  ; 768         ; 0            ; 0       ; 0         ; 7    ; 0            ; |vga_TOP                                                                                                                                                                                                                                                                                                                                            ; vga_TOP                           ; work         ;
+;    |ROM:ROM|                                                                                                                            ; 138 (69)            ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|ROM:ROM                                                                                                                                                                                                                                                                                                                                    ; ROM                               ; work         ;
+;       |chars:chars|                                                                                                                     ; 69 (69)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|ROM:ROM|chars:chars                                                                                                                                                                                                                                                                                                                        ; chars                             ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 127 (1)             ; 91 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 126 (0)             ; 91 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 126 (0)             ; 91 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -331,7 +332,8 @@ refer to the applicable agreement for further details.
 ;                |lpm_shiftreg:ram_data_shift_out|                                                                                        ; 6 (6)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:ram_data_shift_out                                                                                                               ; lpm_shiftreg                      ; work         ;
 ;                |lpm_shiftreg:status_data_shift_out|                                                                                     ; 15 (15)             ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_shiftreg:status_data_shift_out                                                                                                            ; lpm_shiftreg                      ; work         ;
 ;             |sld_rom_sr:crc_rom_sr|                                                                                                     ; 30 (30)             ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_rom_sr:crc_rom_sr                                                                                                                                                                                                          ; sld_rom_sr                        ; work         ;
-;    |vga:vga|                                                                                                                            ; 36 (36)             ; 22 (22)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|vga:vga                                                                                                                                                                                                                                                                                                                                    ; vga                               ; work         ;
+;    |value_ROM:value_ROM|                                                                                                                ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|value_ROM:value_ROM                                                                                                                                                                                                                                                                                                                        ; value_ROM                         ; work         ;
+;    |vga:vga|                                                                                                                            ; 37 (37)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |vga_TOP|vga:vga                                                                                                                                                                                                                                                                                                                                    ; vga                               ; work         ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -363,15 +365,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
 +----------------------------------------------------+---------------------+------------------------+
-; ROM:ROM|out_bit_R                                  ; ROM:ROM|WideOr1     ; yes                    ;
-; ROM:ROM|out_bit_G                                  ; ROM:ROM|WideOr1     ; yes                    ;
-; ROM:ROM|out_bit_B                                  ; ROM:ROM|WideOr1     ; yes                    ;
-; ROM:ROM|char[1]                                    ; ROM:ROM|WideOr1     ; yes                    ;
-; ROM:ROM|char[0]                                    ; ROM:ROM|WideOr1     ; yes                    ;
-; ROM:ROM|char[2]                                    ; ROM:ROM|WideOr1     ; yes                    ;
-; Number of user-specified and inferred latches = 6  ;                     ;                        ;
+; ROM:ROM|char[3]                                    ; ROM:ROM|WideNor0    ; yes                    ;
+; ROM:ROM|char[1]                                    ; ROM:ROM|WideNor0    ; yes                    ;
+; ROM:ROM|char[2]                                    ; ROM:ROM|WideNor0    ; yes                    ;
+; ROM:ROM|char[0]                                    ; ROM:ROM|WideNor0    ; yes                    ;
+; Number of user-specified and inferred latches = 4  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; value_ROM:value_ROM|value[3,7]        ; Stuck at GND due to stuck port data_in ;
+; ROM:ROM|j[3]                          ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 3 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -379,12 +390,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 459   ;
+; Total registers                              ; 496   ;
 ; Number of registers using Synchronous Clear  ; 68    ;
 ; Number of registers using Synchronous Load   ; 60    ;
 ; Number of registers using Asynchronous Clear ; 153   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 306   ;
+; Number of registers using Clock Enable       ; 315   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -413,9 +424,9 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |vga_TOP|ROM:ROM|j[0]      ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |vga_TOP|vga:vga|x[9]      ;
-; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |vga_TOP|vga:vga|y[9]      ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |vga_TOP|ROM:ROM|j[2]      ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |vga_TOP|vga:vga|x[2]      ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |vga_TOP|vga:vga|y[0]      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -521,15 +532,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+-------+----------+--------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "vga:vga"                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; valid ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Signal Tap Logic Analyzer Settings                                                                                                                                                                                                                                      ;
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
@@ -545,20 +547,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 7                           ;
-; cycloneiii_ff         ; 26                          ;
+; cycloneiii_ff         ; 63                          ;
+;     ENA               ; 9                           ;
 ;     ENA SCLR          ; 20                          ;
-;     plain             ; 6                           ;
-; cycloneiii_lcell_comb ; 99                          ;
-;     arith             ; 18                          ;
-;         2 data inputs ; 18                          ;
-;     normal            ; 81                          ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 13                          ;
-;         4 data inputs ; 61                          ;
+;     plain             ; 34                          ;
+; cycloneiii_lcell_comb ; 214                         ;
+;     arith             ; 42                          ;
+;         2 data inputs ; 42                          ;
+;     normal            ; 172                         ;
+;         1 data inputs ; 5                           ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 128                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 3.75                        ;
+; Average LUT depth     ; 3.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -567,7 +570,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -576,10 +579,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
 ; Name                 ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                   ; Details ;
 +----------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+---------+
-; B                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_R                   ; N/A     ;
-; B                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_R                   ; N/A     ;
-; G                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_R                   ; N/A     ;
-; G                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_R                   ; N/A     ;
+; B                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_B                   ; N/A     ;
+; B                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_B                   ; N/A     ;
+; G                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_G                   ; N/A     ;
+; G                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_G                   ; N/A     ;
 ; R                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_R                   ; N/A     ;
 ; R                    ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; ROM:ROM|out_bit_R                   ; N/A     ;
 ; clk                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk                                 ; N/A     ;
@@ -587,8 +590,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; hsync                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; vga:vga|hsync~1                     ; N/A     ;
 ; rst                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst                                 ; N/A     ;
 ; rst                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst                                 ; N/A     ;
-; vsync                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; vga:vga|vsync~2                     ; N/A     ;
-; vsync                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; vga:vga|vsync~2                     ; N/A     ;
+; vsync                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; vga:vga|vsync~1                     ; N/A     ;
+; vsync                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; vga:vga|vsync~1                     ; N/A     ;
 ; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
 ; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
 ; auto_signaltap_0|gnd ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A     ;
@@ -630,10 +633,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Dec 24 15:18:17 2019
+    Info: Processing started: Wed Dec 25 12:28:20 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA_interface -c VGA_interface
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file test.v
+    Info (12023): Found entity 1: value_ROM File: C:/Users/Siriy/Desktop/Projects/VGA/Test.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file vga_top2.v
     Info (12023): Found entity 1: ROM File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file vga_top.v
@@ -643,23 +648,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file chars.v
 Info (12021): Found 1 design units, including 1 entities, in source file vga.v
     Info (12023): Found entity 1: vga File: C:/Users/Siriy/Desktop/Projects/VGA/VGA.v Line: 2
 Info (12127): Elaborating entity "vga_TOP" for the top level hierarchy
-Info (12128): Elaborating entity "vga" for hierarchy "vga:vga" File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v Line: 36
-Info (12128): Elaborating entity "ROM" for hierarchy "ROM:ROM" File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v Line: 49
-Warning (10270): Verilog HDL Case Statement warning at VGA_TOP2.v(50): incomplete case statement has no default case item File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 50
-Info (10264): Verilog HDL Case Statement information at VGA_TOP2.v(50): all case item expressions in this case statement are onehot File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 50
-Warning (10240): Verilog HDL Always Construct warning at VGA_TOP2.v(50): inferring latch(es) for variable "char", which holds its previous value in one or more paths through the always construct File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 50
-Warning (10240): Verilog HDL Always Construct warning at VGA_TOP2.v(82): inferring latch(es) for variable "out_bit_R", which holds its previous value in one or more paths through the always construct File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 82
-Warning (10240): Verilog HDL Always Construct warning at VGA_TOP2.v(82): inferring latch(es) for variable "out_bit_G", which holds its previous value in one or more paths through the always construct File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 82
-Warning (10240): Verilog HDL Always Construct warning at VGA_TOP2.v(82): inferring latch(es) for variable "out_bit_B", which holds its previous value in one or more paths through the always construct File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 82
-Warning (10230): Verilog HDL assignment warning at VGA_TOP2.v(98): truncated value with size 32 to match size of target (4) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 98
-Info (10041): Inferred latch for "out_bit_B" at VGA_TOP2.v(82) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 82
-Info (10041): Inferred latch for "out_bit_G" at VGA_TOP2.v(82) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 82
-Info (10041): Inferred latch for "out_bit_R" at VGA_TOP2.v(82) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 82
-Info (10041): Inferred latch for "char[0]" at VGA_TOP2.v(50) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 50
-Info (10041): Inferred latch for "char[1]" at VGA_TOP2.v(50) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 50
-Info (10041): Inferred latch for "char[2]" at VGA_TOP2.v(50) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 50
-Info (10041): Inferred latch for "char[3]" at VGA_TOP2.v(50) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 50
-Info (12128): Elaborating entity "chars" for hierarchy "ROM:ROM|chars:chars" File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 34
+Warning (10230): Verilog HDL assignment warning at VGA_TOP.v(75): truncated value with size 32 to match size of target (20) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v Line: 75
+Warning (10230): Verilog HDL assignment warning at VGA_TOP.v(78): truncated value with size 32 to match size of target (6) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v Line: 78
+Info (12128): Elaborating entity "vga" for hierarchy "vga:vga" File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v Line: 39
+Info (12128): Elaborating entity "ROM" for hierarchy "ROM:ROM" File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v Line: 53
+Warning (10270): Verilog HDL Case Statement warning at VGA_TOP2.v(52): incomplete case statement has no default case item File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+Info (10264): Verilog HDL Case Statement information at VGA_TOP2.v(52): all case item expressions in this case statement are onehot File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+Warning (10240): Verilog HDL Always Construct warning at VGA_TOP2.v(52): inferring latch(es) for variable "char", which holds its previous value in one or more paths through the always construct File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+Warning (10230): Verilog HDL assignment warning at VGA_TOP2.v(104): truncated value with size 32 to match size of target (4) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 104
+Info (10041): Inferred latch for "char[0]" at VGA_TOP2.v(52) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+Info (10041): Inferred latch for "char[1]" at VGA_TOP2.v(52) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+Info (10041): Inferred latch for "char[2]" at VGA_TOP2.v(52) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+Info (10041): Inferred latch for "char[3]" at VGA_TOP2.v(52) File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+Info (12128): Elaborating entity "chars" for hierarchy "ROM:ROM|chars:chars" File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 35
+Info (12128): Elaborating entity "value_ROM" for hierarchy "value_ROM:value_ROM" File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v Line: 60
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2224.tdf
     Info (12023): Found entity 1: altsyncram_2224 File: C:/Users/Siriy/Desktop/Projects/VGA/db/altsyncram_2224.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_ssc.tdf
@@ -682,7 +684,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_ngc File: C:/Users/Siriy/Desktop/Projects/VGA/db/cmpr_ngc.tdf Line: 22
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2019.12.24.16:18:31 Progress: Loading sld9020ffeb/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2019.12.25.13:28:35 Progress: Loading sld9020ffeb/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -707,26 +709,27 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/ip/s
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/Siriy/Desktop/Projects/VGA/db/ip/sld9020ffeb/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276007): RAM logic "ROM:ROM|chars:chars|Ram0" is uninferred due to asynchronous read logic File: C:/Users/Siriy/Desktop/Projects/VGA/Chars.v Line: 12
-Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
-    Info (13026): Duplicate LATCH primitive "ROM:ROM|out_bit_G" merged with LATCH primitive "ROM:ROM|out_bit_R" File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 82
-    Info (13026): Duplicate LATCH primitive "ROM:ROM|out_bit_B" merged with LATCH primitive "ROM:ROM|out_bit_R" File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 82
-Warning (13012): Latch ROM:ROM|char[1] has unsafe behavior File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 50
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal vga:vga|y[4] File: C:/Users/Siriy/Desktop/Projects/VGA/VGA.v Line: 22
-Warning (13012): Latch ROM:ROM|char[0] has unsafe behavior File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 50
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal vga:vga|y[4] File: C:/Users/Siriy/Desktop/Projects/VGA/VGA.v Line: 22
+Warning (13012): Latch ROM:ROM|char[3] has unsafe behavior File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ROM:ROM|valid[0] File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 39
+Warning (13012): Latch ROM:ROM|char[1] has unsafe behavior File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ROM:ROM|valid[0] File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 39
+Warning (13012): Latch ROM:ROM|char[2] has unsafe behavior File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ROM:ROM|valid[0] File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 39
+Warning (13012): Latch ROM:ROM|char[0] has unsafe behavior File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 52
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal ROM:ROM|valid[0] File: C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v Line: 39
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 45 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 742 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 866 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 724 logic cells
+    Info (21061): Implemented 848 logic cells
     Info (21064): Implemented 6 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4840 megabytes
-    Info: Processing ended: Tue Dec 24 15:18:40 2019
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:39
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4846 megabytes
+    Info: Processing ended: Wed Dec 25 12:28:45 2019
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:40
 
 

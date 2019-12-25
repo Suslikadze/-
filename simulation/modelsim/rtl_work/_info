@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim
 vchars
-Z1 !s110 1577189567
+Z1 !s110 1577259068
 !i10b 1
 !s100 263@C<gm6Wa>;FCG?@Ze<3
 IV>h[X9_cShSgDeDi8Md`52
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1577189567.000000
+Z4 !s108 1577259068.000000
 !s107 C:/Users/Siriy/Desktop/Projects/VGA/Chars.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Siriy/Desktop/Projects/VGA|C:/Users/Siriy/Desktop/Projects/VGA/Chars.v|
 !i113 1
@@ -33,11 +33,11 @@ Z7 tCvgOpt 0
 vROM
 R1
 !i10b 1
-!s100 X9ITzg81QY7CBSTQAVGcA1
-I0AA]:@AJnL8kBS@GJf31d1
+!s100 FM_b`K;]TVBl=d60be2AB0
+IJ^_FhKJg8Z;oABh>ZX7Nl3
 R2
 R0
-w1577189126
+w1577189894
 8C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v
 FC:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP2.v
 L0 2
@@ -54,7 +54,7 @@ R6
 R7
 n@r@o@m
 vvga
-R1
+Z8 !s110 1577259069
 !i10b 1
 !s100 Z4kGUCN@1n]F=0j4>1D1:3
 ImPj<E=iBOmU8Z0GUT9HDh2
@@ -68,7 +68,7 @@ R3
 r1
 !s85 0
 31
-R4
+Z9 !s108 1577259069.000000
 !s107 C:/Users/Siriy/Desktop/Projects/VGA/VGA.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Siriy/Desktop/Projects/VGA|C:/Users/Siriy/Desktop/Projects/VGA/VGA.v|
 !i113 1
@@ -78,11 +78,11 @@ R7
 vvga_TOP
 R1
 !i10b 1
-!s100 fQD@13gUiMIPA`e[XA:nZ1
-InFD;^0UiBS5D^5R>=iYJ^2
+!s100 U[`5EWREVbCcNZhQgB73<1
+ICf]WI[0jj4OnIF@A:<2Vh1
 R2
 R0
-w1577188060
+w1577189814
 8C:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
 FC:/Users/Siriy/Desktop/Projects/VGA/VGA_TOP.v
 L0 2
@@ -99,7 +99,7 @@ R6
 R7
 nvga_@t@o@p
 vvga_TOP_vlg_tst
-!s110 1577189568
+R8
 !i10b 1
 !s100 V:D7Ve^=KS?YJ@2W[l[H<3
 IE2jA6Ue9]jg9_ka1Q`5;k0
@@ -113,7 +113,7 @@ R3
 r1
 !s85 0
 31
-R4
+R9
 !s107 C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim/vga_TOP.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim|C:/Users/Siriy/Desktop/Projects/VGA/simulation/modelsim/vga_TOP.vt|
 !i113 1
